@@ -74,4 +74,4 @@ jobs:
         run: |
           ARTIFACT_ID=$(mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout | grep -v '\[')
           POM_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout | grep -v '\[')
-          bash docker-actions.sh $ARTIFACT_ID $POM_VERSION ${{ secrets.DOCKER_HUB_REPO }}
+          bash docker-actions.sh $ARTIFACT_ID $POM_VERSION ${{ secrets.DOCKER_HUB_EUREKA_SERVER_REPO }}
