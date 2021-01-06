@@ -48,6 +48,14 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub movies-app Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/movies-app/eureka-server</url>
+		</repository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
